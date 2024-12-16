@@ -1,0 +1,7 @@
+<workspace>
+    <Object height="50" name="Chair" rotation="0" width="50" x="0" y="0" zValue="0"/>
+    <Object height="150" name="Storage Zone" rotation="45" width="200" x="330" y="83" zValue="0"/>
+    <Object height="150" name="Office Zone" rotation="0" width="200" x="236" y="83" zValue="0"/>
+    <Object height="150" name="Work Zone" rotation="0" width="200" x="158" y="156" zValue="0"/>
+    <Object height="50" name="Table" rotation="0" width="100" x="181" y="185" zValue="0"/>
+</workspace>
