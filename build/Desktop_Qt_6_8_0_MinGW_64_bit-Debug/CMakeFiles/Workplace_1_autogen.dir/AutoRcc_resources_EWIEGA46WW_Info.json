@@ -1,0 +1,33 @@
+{
+	"BUILD_DIR" : "D:/QT Application/App/WorkPlacePlanner/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Workplace_1_autogen",
+	"CMAKE_BINARY_DIR" : "D:/QT Application/App/WorkPlacePlanner/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_BINARY_DIR" : "D:/QT Application/App/WorkPlacePlanner/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug",
+	"CMAKE_CURRENT_SOURCE_DIR" : "D:/QT Application/App/WorkPlacePlanner",
+	"CMAKE_SOURCE_DIR" : "D:/QT Application/App/WorkPlacePlanner",
+	"CROSS_CONFIG" : false,
+	"GENERATOR" : "Ninja",
+	"INCLUDE_DIR" : "D:/QT Application/App/WorkPlacePlanner/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/Workplace_1_autogen/include",
+	"INPUTS" : 
+	[
+		"D:/QT Application/App/WorkPlacePlanner/Image/storage zone1.png",
+		"D:/QT Application/App/WorkPlacePlanner/Image/office zone1.png",
+		"D:/QT Application/App/WorkPlacePlanner/Image/cfloor.jpg",
+		"D:/QT Application/App/WorkPlacePlanner/Image/table1.png",
+		"D:/QT Application/App/WorkPlacePlanner/Image/pot.png",
+		"D:/QT Application/App/WorkPlacePlanner/Image/work zone1.png",
+		"D:/QT Application/App/WorkPlacePlanner/Image/lamp.png",
+		"D:/QT Application/App/WorkPlacePlanner/Image/shelf.png",
+		"D:/QT Application/App/WorkPlacePlanner/Image/chair1.png"
+	],
+	"LOCK_FILE" : "D:/QT Application/App/WorkPlacePlanner/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/Workplace_1_autogen.dir/AutoRcc_resources_EWIEGA46WW_Lock.lock",
+	"MULTI_CONFIG" : false,
+	"OPTIONS" : [ "--no-zstd", "-name", "resources" ],
+	"OUTPUT_CHECKSUM" : "EWIEGA46WW",
+	"OUTPUT_NAME" : "qrc_resources.cpp",
+	"RCC_EXECUTABLE" : "C:/Qt/6.8.0/mingw_64/bin/rcc.exe",
+	"RCC_LIST_OPTIONS" : [ "--list" ],
+	"SETTINGS_FILE" : "D:/QT Application/App/WorkPlacePlanner/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/CMakeFiles/Workplace_1_autogen.dir/AutoRcc_resources_EWIEGA46WW_Used.txt",
+	"SOURCE" : "D:/QT Application/App/WorkPlacePlanner/resources.qrc",
+	"USE_BETTER_GRAPH" : true,
+	"VERBOSITY" : 0
+}

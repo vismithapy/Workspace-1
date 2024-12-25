@@ -14,10 +14,14 @@ find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
 find_package(Qt6 REQUIRED COMPONENTS Core Gui Widgets Xml)
 
 set(PROJECT_SOURCES
-        main.cpp
-        mainwindow.cpp
-        mainwindow.h
-        mainwindow.ui
+    main.cpp
+    mainwindow.cpp
+    mainwindow.h
+    mainwindow.ui
+    customitem.h
+    customitem.cpp
+    # Add this line
+
 )
 
 if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
@@ -26,6 +30,16 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
         ${PROJECT_SOURCES}
         customitem.h
         customitem.cpp
+        resources.qrc
+
+
+
+
+
+
+
+
+
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Workplace_1 APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

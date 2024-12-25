@@ -1,31 +1,36 @@
 #ifndef CUSTOMITEM_H
 #define CUSTOMITEM_H
 
-#include <QGraphicsRectItem>
+#include <QGraphicsPixmapItem>
+#include <QGraphicsSceneContextMenuEvent>
 #include <QGraphicsSceneMouseEvent>
-#include <QMenu>
+#include <QString>
+#include <QPixmap>
+#include <QKeyEvent>
 
-class CustomItem : public QGraphicsRectItem
+class CustomItem : public QGraphicsPixmapItem
 {
 public:
-    explicit CustomItem(const QString &name, const QColor &color = Qt::gray,
-                        const QSizeF &size = QSizeF(50, 50), QGraphicsItem *parent = nullptr);
+    explicit CustomItem(const QString &name, const QString &imagePath,
+                        QGraphicsItem *parent = nullptr);
 
     QString getName() const { return itemName; }
 
 protected:
-    void mousePressEvent(QGraphicsSceneMouseEvent *event) override;
-    void mouseMoveEvent(QGraphicsSceneMouseEvent *event) override;
-    void mouseReleaseEvent(QGraphicsSceneMouseEvent *event) override;
-    void contextMenuEvent(QGraphicsSceneContextMenuEvent *event) override;
+    void contextMenuEvent(QGraphicsSceneContextMenuEvent *event) override; // Right-click menu
+    void mousePressEvent(QGraphicsSceneMouseEvent *event) override;        // Start resizing
+    void mouseMoveEvent(QGraphicsSceneMouseEvent *event) override;         // Handle resizing
+    void mouseReleaseEvent(QGraphicsSceneMouseEvent *event) override;      // Stop resizing
+    void keyPressEvent(QKeyEvent *event) override;                         // Handle keyboard events for resizing
 
 private:
-    QString itemName;
-    QPointF lastMousePos;    // Track last mouse position for resizing
-    bool resizing = false;   // True if resizing
-    bool rotateMode = false; // True if rotation is enabled
+    void resizeItem(qreal scaleFactor); // Resize the item by a factor
 
-    void showContextMenu(const QPointF &pos); // Display the context menu
+    QString itemName;
+    QPixmap originalPixmap;       // Store the original pixmap to maintain clarity during resizing
+    bool resizing = false;        // Flag to check if resizing is active
+    QPointF lastMousePos;         // Last position of the mouse during resizing
+    QRectF originalRect;          // Store the original size for scaling
 };
 
 #endif // CUSTOMITEM_H
